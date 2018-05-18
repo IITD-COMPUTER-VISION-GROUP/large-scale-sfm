@@ -1,15 +1,21 @@
-Dependency
-1: Ceres (please use OpenBLAS to build ceres, otherwise it will be very slow), Eigen, Cudaart, jhead, opencv
+Dependencies
 
-2. Provide the necessary path in Makefile under SiftGPU folder.
+1: Ceres (please build ceres with OpenBLAS support, for faster computations), Eigen, Cudaart, jhead, opencv
 
-3. Create a "Out" folder. Create "rgb" and "dendogram" folder under "Out" and put the images in jpg in "rgb" folder.
+2. Provide the necessary paths in Makefile under SiftGPU folder.
 
-4. Make the makefile under SiftGPU
+Output Folders:
 
-5. Please keep the libg2o from Optimizer/Thirdparty to LD_LIBRARY_PATH
+1. Create a "Out" folder. Create "rgb" and "dendogram" folder under "Out" and put the images in jpg in "rgb" folder.
 
-6. Edit config.txt in "matlab_codes" to give absolute path to the SFM directory
+2. Make the makefile under SiftGPU
+
+
+Setting Library Paths:
+
+1. Please add the libg2o path from Optimizer/Thirdparty to LD_LIBRARY_PATH
+
+2. Edit config.txt in "matlab_codes" to give absolute path to the lSFM directory
 
 
 Please add libraries to "LD_LIBRARY_PATH". Examples are:
@@ -22,5 +28,7 @@ Run the matlab using the following command
 
 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 matlab
 
-7.run the matlab command "run.m" from matlab_codes
+Execution:
+
+Run the matlab command "run.m" from matlab_codes
 
