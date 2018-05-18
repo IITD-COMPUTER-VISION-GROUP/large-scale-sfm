@@ -24,13 +24,3 @@ LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 matlab
 
 7.run the matlab command "run.m" from matlab_codes
 
-
-If you use this code please cite the following papers
-
-1. Bhowmick B., Patra S., Chatterjee A. , Govindu V. M. , Banerjee S. , Divide and
-Conquer: A Hierarchical Approach to Large-scale Structure-from-Motion, in Journal
-of Computer Vision and Image Understanding, 157 (2017) pages 190-205 .
-
-2.Bhowmick B., Patra S., Chatterjee A. , Govindu V. M. , Banerjee S. , Divide
-and Conquer: Efficient large-scale Structure-from-Motion using graph partitioning, in
-Proceedings of ACCV, 2014, pages 273-287.
