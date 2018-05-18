@@ -1,0 +1,13 @@
+﻿Build started 12/1/2016 1:00:33 PM.
+     1>Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I.. /I..\include /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _LIB /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"gtest/Release\gtest\\" /Fd"gtest/Release\gtest\gtest.pdb" /Gd /TP /analyze- /errorReport:prompt "..\src\gtest-all.cc"
+         gtest-all.cc
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"gtest/Release\gtest.lib" /NOLOGO "gtest/Release\gtest\gtest-all.obj"
+         gtest.vcxproj -> N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest/Release\gtest.lib
+     1>Done Building Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.42

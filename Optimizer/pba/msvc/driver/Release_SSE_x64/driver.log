@@ -1,0 +1,46 @@
+﻿Build started 26-04-2014 12:04:00.
+     1>Project "H:\OneShotIITDelhi\pba\msvc\driver\driver.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release_SSE_x64\driver.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release_SSE_x64\\" /Fd"Release_SSE_x64\vc100.pdb" /Gd /TP /errorReport:prompt ..\..\src\driver\driver.cpp
+         driver.cpp
+     1>h:\oneshotiitdelhi\pba\src\driver\../pba/util.h(181): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\oneshotiitdelhi\pba\src\driver\../pba/util.h(183): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\oneshotiitdelhi\pba\src\driver\../pba/util.h(193): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\oneshotiitdelhi\pba\src\driver\../pba/util.h(271): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\oneshotiitdelhi\pba\src\driver\../pba/util.h(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>h:\oneshotiitdelhi\pba\src\pba\DataInterface.h(284): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 h:\oneshotiitdelhi\pba\src\driver\../pba/util.h(566) : see reference to function template instantiation 'void CameraT_<FT>::GetCameraCenter<float>(Float [])' being compiled
+                 with
+                 [
+                     FT=double,
+                     Float=float
+                 ]
+     1>h:\oneshotiitdelhi\pba\src\pba\DataInterface.h(68): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+                 h:\oneshotiitdelhi\pba\src\driver\../pba/util.h(568) : see reference to function template instantiation 'void CameraT_<FT>::SetCameraT<CameraD>(const CameraX &)' being compiled
+                 with
+                 [
+                     FT=float,
+                     CameraX=CameraD
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\driver_x64.exe" /INCREMENTAL:NO /NOLOGO ..\..\bin\\pba_x64.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release_SSE_x64\driver_x64.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\OneShotIITDelhi\pba\bin\driver_x64.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\driver_x64.lib" /MACHINE:X64 Release_SSE_x64\driver.obj
+         Generating code
+         Finished generating code
+         driver.vcxproj -> H:\OneShotIITDelhi\pba\msvc\driver\..\..\bin\driver_x64.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\bin\driver_x64.exe;#1" /manifest Release_SSE_x64\driver_x64.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release_SSE_x64\driver.unsuccessfulbuild".
+         Touching "Release_SSE_x64\driver.lastbuildstate".
+     1>Done Building Project "H:\OneShotIITDelhi\pba\msvc\driver\driver.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.52

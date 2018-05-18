@@ -1,0 +1,3 @@
+/home/suvam/sfm/SFM/Optimizer/Thirdparty/g2o/build/CMakeFiles/edit_cache.dir
+/home/suvam/sfm/SFM/Optimizer/Thirdparty/g2o/build/CMakeFiles/rebuild_cache.dir
+/home/suvam/sfm/SFM/Optimizer/Thirdparty/g2o/build/CMakeFiles/g2o.dir

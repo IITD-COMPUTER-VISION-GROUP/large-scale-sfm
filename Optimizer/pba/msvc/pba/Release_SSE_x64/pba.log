@@ -1,0 +1,114 @@
+﻿Build started 26-04-2014 12:03:50.
+     1>Project "H:\OneShotIITDelhi\pba\msvc\pba\pba.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release_SSE_x64\pba.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\\include\\" /Zi /nologo /W1 /WX- /O2 /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D PBA_DLL /D DLL_EXPORT /D PBA_NO_GPU /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release_SSE_x64\\" /Fd"Release_SSE_x64\vc100.pdb" /Gd /TP /errorReport:prompt ..\..\src\pba\ConfigBA.cpp ..\..\src\pba\pba.cpp ..\..\src\pba\SparseBundleCPU.cpp
+         ConfigBA.cpp
+         pba.cpp
+         SparseBundleCPU.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2144): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2165) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::_Nonscalar_ptr_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _InIt=double *
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2176) : see reference to function template instantiation '_OutIt std::_Copy_impl<_Iter,float>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _Iter=double *,
+                     _InIt=double *
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2636) : see reference to function template instantiation '_OutIt std::copy<Float*,float*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     Float=double,
+                     _InIt=double *
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2634) : while compiling class template member function 'void SparseBundleCPU<Float>::TransferDataToHost(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2600) : while compiling class template member function 'void SparseBundleCPU<Float>::BundleAdjustment(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2468) : while compiling class template member function 'SparseBundleCPU<Float>::SparseBundleCPU(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(4168) : see reference to class template instantiation 'SparseBundleCPU<Float>' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2692): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2715) : see reference to function template instantiation 'void std::_Fill<_Iter,_Ty>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+                 with
+                 [
+                     _Iter=float *,
+                     _Ty=int,
+                     _FwdIt=float *
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2855) : see reference to function template instantiation 'void std::fill<Float*,int>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+                 with
+                 [
+                     Float=float,
+                     _FwdIt=float *,
+                     _Ty=int
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2828) : while compiling class template member function 'void SparseBundleCPU<Float>::ProcessWeightCameraQ(std::vector<_Ty> &,std::vector<_Ty> &,Float *,Float *)'
+                 with
+                 [
+                     Float=float,
+                     _Ty=int
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(3116) : while compiling class template member function 'void SparseBundleCPU<Float>::NormalizeDataF(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2570) : while compiling class template member function 'int SparseBundleCPU<Float>::ValidateInputData(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2600) : while compiling class template member function 'void SparseBundleCPU<Float>::BundleAdjustment(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(2468) : while compiling class template member function 'SparseBundleCPU<Float>::SparseBundleCPU(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+                 ..\..\src\pba\SparseBundleCPU.cpp(4171) : see reference to class template instantiation 'SparseBundleCPU<Float>' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\pba_x64.dll" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\\lib\x64/../x64" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"pba.def" /MANIFEST /ManifestFile:"Release_SSE_x64\pba_x64.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"H:\OneShotIITDelhi\pba\bin\pba_x64.pdb" /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\pba_x64.lib" /MACHINE:X64 /DLL Release_SSE_x64\ConfigBA.obj
+         Release_SSE_x64\pba.obj
+         Release_SSE_x64\SparseBundleCPU.obj
+            Creating library ..\..\bin\pba_x64.lib and object ..\..\bin\pba_x64.exp
+         Generating code
+         Finished generating code
+         pba.vcxproj -> H:\OneShotIITDelhi\pba\msvc\pba\..\..\bin\pba_x64.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\bin\pba_x64.dll;#2" /manifest Release_SSE_x64\pba_x64.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release_SSE_x64\pba.unsuccessfulbuild".
+         Touching "Release_SSE_x64\pba.lastbuildstate".
+     1>Done Building Project "H:\OneShotIITDelhi\pba\msvc\pba\pba.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.10

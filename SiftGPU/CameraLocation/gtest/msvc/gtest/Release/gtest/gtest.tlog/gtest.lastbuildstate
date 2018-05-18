@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+Release|Win32|N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\|

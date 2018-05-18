@@ -1,0 +1,15 @@
+﻿Build started 12/1/2016 1:00:24 PM.
+     1>Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I.. /I..\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"gtest/Debug\gtest\\" /Fd"gtest/Debug\gtest\gtest.pdb" /Gd /TP /analyze- /errorReport:prompt "..\src\gtest-all.cc"
+         gtest-all.cc
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest/Debug\gtest.lib) does not match the Library's OutputFile property value (N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest\Debug\gtestd.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(gtest) does not match the Library's OutputFile property value (gtestd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"gtest/Debug\gtestd.lib" /NOLOGO "gtest/Debug\gtest\gtest-all.obj"
+         gtest.vcxproj -> N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest/Debug\gtest.lib
+     1>Done Building Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.73

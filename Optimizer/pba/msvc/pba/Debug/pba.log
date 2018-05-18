@@ -1,0 +1,444 @@
+﻿Build started 4/19/2014 8:53:35 PM.
+     1>Project "G:\BROJO\one-shot_framewrks\pba\msvc\pba\pba.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\pba.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Performing Custom Build Tools
+         ProgramCU.cu
+     1>G:/BROJO/one-shot_framewrks/pba/src/pba/ProgramCU.cu(131): warning : statement is unreachable
+         
+         tmpxft_00000760_00000000-3_ProgramCU.cudafe1.gpu
+         tmpxft_00000760_00000000-8_ProgramCU.cudafe2.gpu
+         ProgramCU.cu
+     1>G:/BROJO/one-shot_framewrks/pba/src/pba/ProgramCU.cu(131): warning : statement is unreachable
+         
+     1>ptxas C : /Users/SIY107~1/AppData/Local/Temp/tmpxft_00000760_00000000-4_ProgramCU.ptx, line 2584; warning : Double is not supported. Demoting to float
+         tmpxft_00000760_00000000-3_ProgramCU.cudafe1.cpp
+         tmpxft_00000760_00000000-14_ProgramCU.ii
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\\include\\" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PBA_DLL /D DLL_EXPORT /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\pba\ConfigBA.cpp ..\..\src\pba\CuTexImage.cpp ..\..\src\pba\pba.cpp ..\..\src\pba\SparseBundleCPU.cpp ..\..\src\pba\SparseBundleCU.cpp
+         SparseBundleCU.cpp
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecu.cpp(623): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecu.cpp(1509): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecu.cpp(1514): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+         SparseBundleCPU.cpp
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3152): warning C4244: '*=' : conversion from 'double' to 'float', possible loss of data
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3116) : while compiling class template member function 'void SparseBundleCPU<Float>::NormalizeDataF(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2570) : while compiling class template member function 'int SparseBundleCPU<Float>::ValidateInputData(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2600) : while compiling class template member function 'void SparseBundleCPU<Float>::BundleAdjustment(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2468) : while compiling class template member function 'SparseBundleCPU<Float>::SparseBundleCPU(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(4168) : see reference to class template instantiation 'SparseBundleCPU<Float>' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3242): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3187) : while compiling class template member function 'void SparseBundleCPU<Float>::NormalizeDataD(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2636) : see reference to function template instantiation '_OutIt std::copy<Float*,float*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     Float=double,
+                     _InIt=double *
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2634) : while compiling class template member function 'void SparseBundleCPU<Float>::TransferDataToHost(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(958): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(4054) : see reference to function template instantiation 'double ProgramCPU::ComputeVectorNorm<Float>(const avec<Float> &,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(4007) : while compiling class template member function 'void SparseBundleCPU<Float>::RunProfileSteps(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(927): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(4057) : see reference to function template instantiation 'void ProgramCPU::ComputeSAXPY<Float>(Float,const avec<Float> &,const avec<Float> &,avec<Float> &,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3242): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3187) : while compiling class template member function 'void SparseBundleCPU<Float>::NormalizeDataD(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2570) : while compiling class template member function 'int SparseBundleCPU<Float>::ValidateInputData(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2600) : while compiling class template member function 'void SparseBundleCPU<Float>::BundleAdjustment(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2468) : while compiling class template member function 'SparseBundleCPU<Float>::SparseBundleCPU(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(4171) : see reference to class template instantiation 'SparseBundleCPU<Float>' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2636) : see reference to function template instantiation '_OutIt std::copy<Float*,float*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     Float=float,
+                     _InIt=float *
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2634) : while compiling class template member function 'void SparseBundleCPU<Float>::TransferDataToHost(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(958): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(4054) : see reference to function template instantiation 'double ProgramCPU::ComputeVectorNorm<Float>(const avec<Float> &,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(4007) : while compiling class template member function 'void SparseBundleCPU<Float>::RunProfileSteps(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(927): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(4057) : see reference to function template instantiation 'void ProgramCPU::ComputeSAXPY<Float>(Float,const avec<Float> &,const avec<Float> &,avec<Float> &,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2850): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2828) : while compiling class template member function 'void SparseBundleCPU<Float>::ProcessWeightCameraQ(std::vector<_Ty> &,std::vector<_Ty> &,Float *,Float *)'
+                 with
+                 [
+                     Float=double,
+                     _Ty=int
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3116) : while compiling class template member function 'void SparseBundleCPU<Float>::NormalizeDataF(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2851): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3175) : see reference to function template instantiation '_OutIt std::copy<const float*,Float*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=double *,
+                     Float=double,
+                     _InIt=const float *
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2709) : see reference to function template instantiation '_OutIt std::copy<float*,Float*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=double *,
+                     Float=double,
+                     _InIt=float *
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2656) : while compiling class template member function 'bool SparseBundleCPU<Float>::InitializeStorageForSFM(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(1451): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2933) : see reference to function template instantiation 'void ProgramCPU::ComputeJacobian<Float>(size_t,size_t,const Float *,const Float *,Float *,Float *,const int *,const Float *,const Float *,const int *,bool,int,bool,Float *,int,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2920) : while compiling class template member function 'void SparseBundleCPU<Float>::EvaluateJacobians(void)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2139): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3040) : see reference to function template instantiation 'void ProgramCPU::ComputeJX_<Float>(size_t,size_t,const Float *,Float *,const Float *,const Float *,const Float *,const Float *,const int *,bool,int,int,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3034) : while compiling class template member function 'void SparseBundleCPU<Float>::ComputeJX(avec<Float> &,avec<Float> &,int)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2080): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3044) : see reference to function template instantiation 'void ProgramCPU::ComputeJX<Float>(size_t,size_t,const Float *,const Float *,const Float *,const int *,Float *,int,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(1136): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3014) : see reference to function template instantiation 'void ProgramCPU::ComputeProjection<Float>(size_t,const Float *,const Float *,const Float *,const int *,Float *,int,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3010) : while compiling class template member function 'float SparseBundleCPU<Float>::EvaluateProjection(avec<Float> &,avec<Float> &,avec<Float> &)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(1194): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3026) : see reference to function template instantiation 'void ProgramCPU::ComputeProjectionX<Float>(size_t,const Float *,const Float *,const Float *,const int *,Float *,int,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3022) : while compiling class template member function 'float SparseBundleCPU<Float>::EvaluateProjectionX(avec<Float> &,avec<Float> &,avec<Float> &)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2861): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2828) : while compiling class template member function 'void SparseBundleCPU<Float>::ProcessWeightCameraQ(std::vector<_Ty> &,std::vector<_Ty> &,Float *,Float *)'
+                 with
+                 [
+                     Float=float,
+                     _Ty=int
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3116) : while compiling class template member function 'void SparseBundleCPU<Float>::NormalizeDataF(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3175) : see reference to function template instantiation '_OutIt std::copy<const float*,Float*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     Float=float,
+                     _InIt=const float *
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(1451): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2933) : see reference to function template instantiation 'void ProgramCPU::ComputeJacobian<Float>(size_t,size_t,const Float *,const Float *,Float *,Float *,const int *,const Float *,const Float *,const int *,bool,int,bool,Float *,int,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2920) : while compiling class template member function 'void SparseBundleCPU<Float>::EvaluateJacobians(void)'
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2139): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3040) : see reference to function template instantiation 'void ProgramCPU::ComputeJX_<Float>(size_t,size_t,const Float *,Float *,const Float *,const Float *,const Float *,const Float *,const int *,bool,int,int,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3034) : while compiling class template member function 'void SparseBundleCPU<Float>::ComputeJX(avec<Float> &,avec<Float> &,int)'
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2080): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3044) : see reference to function template instantiation 'void ProgramCPU::ComputeJX<Float>(size_t,size_t,const Float *,const Float *,const Float *,const int *,Float *,int,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(1136): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3014) : see reference to function template instantiation 'void ProgramCPU::ComputeProjection<Float>(size_t,const Float *,const Float *,const Float *,const int *,Float *,int,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3010) : while compiling class template member function 'float SparseBundleCPU<Float>::EvaluateProjection(avec<Float> &,avec<Float> &,avec<Float> &)'
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(1194): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3026) : see reference to function template instantiation 'void ProgramCPU::ComputeProjectionX<Float>(size_t,const Float *,const Float *,const Float *,const int *,Float *,int,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(3022) : while compiling class template member function 'float SparseBundleCPU<Float>::EvaluateProjectionX(avec<Float> &,avec<Float> &,avec<Float> &)'
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2352): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2404) : see reference to function template instantiation 'void ProgramCPU::ComputeJtEC_<Float>(size_t,const Float *,Float *,const Float *,const Float *,const Float *,const int *,const int *,const int *,bool,int,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2961) : see reference to function template instantiation 'void ProgramCPU::ComputeJtE_<Float>(size_t,size_t,size_t,const Float *,Float *,const Float *,const Float *,const Float *,const int *,const int *,const int *,const int *,const Float *,bool,int,int,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2949) : while compiling class template member function 'void SparseBundleCPU<Float>::ComputeJtE(avec<Float> &,avec<Float> &,int)'
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2287): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2408) : see reference to function template instantiation 'void ProgramCPU::ComputeJtEP<Float>(size_t,const Float *,const Float *,const int *,Float *,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2243): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2329) : see reference to function template instantiation 'void ProgramCPU::ComputeJtEC<Float>(size_t,const Float *,const Float *,const int *,const int *,Float *,bool,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2982) : see reference to function template instantiation 'void ProgramCPU::ComputeJtE<Float>(size_t,size_t,const Float *,const Float *,const int *,const int *,const Float *,const int *,Float *,bool,int,int,int)' being compiled
+                 with
+                 [
+                     Float=double
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2352): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2404) : see reference to function template instantiation 'void ProgramCPU::ComputeJtEC_<Float>(size_t,const Float *,Float *,const Float *,const Float *,const Float *,const int *,const int *,const int *,bool,int,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2961) : see reference to function template instantiation 'void ProgramCPU::ComputeJtE_<Float>(size_t,size_t,size_t,const Float *,Float *,const Float *,const Float *,const Float *,const int *,const int *,const int *,const int *,const Float *,bool,int,int,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2949) : while compiling class template member function 'void SparseBundleCPU<Float>::ComputeJtE(avec<Float> &,avec<Float> &,int)'
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2287): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2408) : see reference to function template instantiation 'void ProgramCPU::ComputeJtEP<Float>(size_t,const Float *,const Float *,const int *,Float *,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+     1>g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2243): warning C4018: '>=' : signed/unsigned mismatch
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2329) : see reference to function template instantiation 'void ProgramCPU::ComputeJtEC<Float>(size_t,const Float *,const Float *,const int *,const int *,Float *,bool,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2982) : see reference to function template instantiation 'void ProgramCPU::ComputeJtE<Float>(size_t,size_t,const Float *,const Float *,const int *,const int *,const Float *,const int *,Float *,bool,int,int,int)' being compiled
+                 with
+                 [
+                     Float=float
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2692): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2715) : see reference to function template instantiation 'void std::_Fill<_Iter,_Ty>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+                 with
+                 [
+                     _Iter=float *,
+                     _Ty=int,
+                     _FwdIt=float *
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2855) : see reference to function template instantiation 'void std::fill<Float*,int>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+                 with
+                 [
+                     Float=float,
+                     _FwdIt=float *,
+                     _Ty=int
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2828) : while compiling class template member function 'void SparseBundleCPU<Float>::ProcessWeightCameraQ(std::vector<_Ty> &,std::vector<_Ty> &,Float *,Float *)'
+                 with
+                 [
+                     Float=float,
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2144): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2165) : see reference to function template instantiation '_OutIt std::_Copy_impl<_Iter,_OutIt>(_InIt,_InIt,_OutIt,std::_Nonscalar_ptr_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _Iter=double *,
+                     _InIt=double *
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2196) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,_Iter>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _InIt=double *,
+                     _Iter=float *
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2216) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::random_access_iterator_tag,std::random_access_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _InIt=double *
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(2227) : see reference to function template instantiation '_OutIt std::_Copy_impl<_Iter,_OutIt>(_InIt,_InIt,_OutIt,std::tr1::false_type)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _Iter=double *,
+                     _InIt=double *
+                 ]
+                 g:\brojo\one-shot_framewrks\pba\src\pba\sparsebundlecpu.cpp(2636) : see reference to function template instantiation '_OutIt std::copy<Float*,float*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     Float=double,
+                     _InIt=double *
+                 ]
+         pba.cpp
+         CuTexImage.cpp
+         ConfigBA.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\pba_d.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\\lib\x64/../Win32" cuda.lib cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"pba.def" /MANIFEST:NO /DEBUG /PDB:"G:\BROJO\one-shot_framewrks\pba\bin\pba_d.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\pba_d.lib" /MACHINE:X86 /DLL Debug\\ProgramCU.obj
+         Debug\ConfigBA.obj
+         Debug\CuTexImage.obj
+         Debug\pba.obj
+         Debug\SparseBundleCPU.obj
+         Debug\SparseBundleCU.obj
+            Creating library ..\..\bin\pba_d.lib and object ..\..\bin\pba_d.exp
+         pba.vcxproj -> G:\BROJO\one-shot_framewrks\pba\msvc\pba\..\..\bin\pba_d.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\pba.unsuccessfulbuild".
+         Touching "Debug\pba.lastbuildstate".
+     1>Done Building Project "G:\BROJO\one-shot_framewrks\pba\msvc\pba\pba.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:20.69

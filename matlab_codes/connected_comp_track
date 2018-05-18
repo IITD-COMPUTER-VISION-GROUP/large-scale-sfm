@@ -1,0 +1,31 @@
+
+numcams = 30;
+
+fid = fopen('out.nvm','r');
+
+tline = fgetl(fid);
+tracks = [];
+ind = 1;
+pair = [];
+while ischar(tline)
+    str=strread(tline,'%s');
+    num = str2num(str{7});
+    
+    A = [];%[str2num(str{7})];
+    track_imgs = str2num(str{7});
+    
+     for i = 1:num
+        cloc = 7 + (i-1)*4;
+        A = [A str2num(str{cloc+1})+1];
+     end
+     
+     for i = 1:size(A,2)
+         for j = i+1: size(A,2)
+             pair = [pair; A(i) A(j)];
+         end
+     end
+end
+
+m1 = num_cams;
+g = sparse(pair(:,1),pair(:,2),true,m1,m1);
+[s,c] = graphconncomp(g,'DIRECTED','false');

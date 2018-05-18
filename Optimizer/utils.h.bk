@@ -1,0 +1,169 @@
+#ifndef _UTILS_H_
+#define _UTILS_H_
+
+#include <iomanip>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <stdlib.h>
+#include<iostream>
+#include<fstream>
+#include<istream>
+#include <iomanip>
+#include<vector>
+#include<string>
+#include <cmath>
+#include<map>
+#include<list>
+#include"vector.h"
+using namespace std;
+
+#define MAXITER 1
+#define WIDTH (640)
+#define HEIGHT (480)
+#define CLAMP(x,mn,mx) (((x) < mn) ? mn : (((x) > mx) ? mx : (x)))
+
+//typedef struct {
+//    double R[9];     /* Rotation */
+//    double t[3];     /* Translation */
+//    double f;        /* Focal length */
+//
+//    double f_scale, k_scale; /* Scale on focal length, distortion params */
+//} CameraParam;
+//
+//
+//
+//
+//typedef struct {
+//    int num_cameras;               /* Number of cameras */
+//    int num_points;                /* Number of points */
+//    int num_params_per_camera;     /* Number of parameters for each camera */
+//
+//    
+//       
+//    CameraParam global_params;
+//    CameraParam *init_params;  /* Initial camera parameters */
+//
+//    v3_t *points;
+//} globalParam;
+//
+#define NUM_CAMERA_PARAMS 9
+#define POLY_INVERSE_DEGREE 6
+typedef struct {
+	double R_rod[3];
+    double R[9];     /* Rotation */
+    double t[3];     /* Translation */
+    double f;        /* Focal length */
+    double k[2];     /* Undistortion parameters */
+    double k_inv[POLY_INVERSE_DEGREE]; /* Inverse undistortion parameters */
+    char constrained[NUM_CAMERA_PARAMS];
+    double constraints[NUM_CAMERA_PARAMS];  /* Constraints (if used) */
+    double weights[NUM_CAMERA_PARAMS];      /* Weights on the constraints */
+    double K_known[9];  /* Intrinsics (if known) */
+    double k_known[5];  /* Distortion params (if known) */
+
+    char fisheye;            /* Is this a fisheye image? */
+    char known_intrinsics;   /* Are the intrinsics known? */
+    double f_cx, f_cy;       /* Fisheye center */
+    double f_rad, f_angle;   /* Other fisheye parameters */
+    double f_focal;          /* Fisheye focal length */
+
+    double f_scale, k_scale; /* Scale on focal length, distortion params */
+    int change;
+} camera_params_t;
+extern vector<vector<int>> cameratoworld;
+extern camera_params_t*initCameras,*initCamerasOri;
+// Type definitions
+typedef struct feat1
+{
+	double x;
+	double y;
+}Feature;
+
+typedef struct feat2
+{
+	double x;
+	double y;
+	double z;
+	void *data;
+}Feature3;
+//typedef CvPoint2D64f Feature;
+//typedef CvPoint2D64f* FeatureList;
+
+//typedef CvPoint3D64f Feature3;
+//typedef CvPoint3D64f* FeatureList3;
+
+typedef vector<Feature3> Feature3Vec;
+
+void printEstimatedParams ();
+void computeVisionCameraMatrix ();
+int constructArrStructures ();
+void computeProjEstimate (double *outProjEstimate);
+double median_copy(int n, double *arr);
+double kth_element_copy(int n, int k, double *arr);
+double kth_element(int n, int k, double *arr);
+int iround(double x);
+double* computeCameraAndProj2 (int index,v3_t &curWorldPtEstimate, double *proj);
+static int partition(int n, double *arr);
+
+extern int whatToCalibrate;
+extern int nActualCameras;        /**< Actual number of views in dataset. */
+extern int nWorkingCameras;       /**< Number of views with which we are working in current iteration. */
+
+// Variables for maintaining world points and their projections
+extern string strWorldPtsProjectionFile;
+extern int nWorldPts;                                 /**< Number of world points.  */
+extern int nFeatureCorrs;                             /**< Maximum number of feature correspondences for a single world point. */
+extern Feature3Vec vecOfWorldPts;                     /**< Current copy of the world points. */
+extern Feature3Vec vecOfWorldPts1;                     /**< Current copy of the world points. */
+extern Feature3Vec vecOfWorldPtsTmp;
+extern Feature3Vec color;                     /**< Current copy of the world points. */
+extern Feature3Vec color1;                     /**< Current copy of the world points. */
+extern vector<Feature3Vec> vecOfWorldPtProjs;         /**< Current copy of the world point projections. */
+extern vector<Feature3Vec> vecOfWorldPtProjs1; 
+extern vector<Feature3Vec> vecOfWorldPtProjs2; 
+extern vector<vector <int>> vecOfsiftids;
+// Variables for maintaining camera parameters
+extern string strIntrinsicParamsFile;
+extern string strExtrinsicParamsFile;
+      /**< Structure maintaining the various estimated camera matrices. */
+
+extern int nProjPtParams;
+extern int nValidWorldPtProjs;
+extern int nSingleCamParams, nWorldPtParams;
+extern bool amCalibratingStructure, amCalibratingCameraIntrinsics, amCalibratingCameraOrientations, amCalibratingCameraPositions;
+//extern FeatureList3 worldPtsArr;        /**< Array containing the world point estimates. */
+//extern FeatureList* featureCorrsArr;    /**< Array of feature correspondence arrays. */
+extern char *pProjVisibilityMask;       /**< Binary array indicating whether pt i is visible in image j or not. */
+extern double *pWorldPtProjections;     /**< Array containing all valid world point projections. */
+extern double *pInitialParamEstimate;   /**< Initial parameter vector consisting of camera parameters and projection pts. */
+extern double *pInitialParamEstimate2; 
+extern int  num_projections;
+// Utility matrices
+
+//extern IplImage **image;
+extern int verbosityLevel;                   /**< Verbosity level of sparse bundle adjustment. */
+extern double *pMinimizationOptions;         /**< Options configured for performing sparse bundle adjustment based minimization. */
+extern double *pOutputInfoOptions;           /**< After performing sparse bundle adjustment, contains info regarding outcome of minimization. */
+extern double *global_last_ws;
+extern double *global_last_Rs;
+//extern double *global_Rs;
+extern double curErrorThresh;
+extern bool isFirstIteration;
+extern double *pCurrentCameraEstimate;   /**< Current camera parameter vector. */
+extern double *pCurrentWorldPtEstimate;   /**< Current world point parameter vector. */
+extern int *pProjectionCount;
+extern vector<int>inValidWorld;
+extern vector<int>inValidCam;
+extern vector<int>revmapworld;
+extern vector<int>remapcam;
+extern vector<int>remapworld;
+extern map<long, long>currentWorldIndex;
+extern map<long, vector<double>>WorldStats;
+
+extern vector<pair<int,string>>inv_mapping;
+extern int num_observation_projection;
+#define CLAMP(x,mn,mx) (((x) < mn) ? mn : (((x) > mx) ? mx : (x)))
+#define INVALID_PROJ -10000.0
+#endif // _UTILS_H_

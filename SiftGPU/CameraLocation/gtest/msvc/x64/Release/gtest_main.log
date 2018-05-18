@@ -1,0 +1,17 @@
+﻿Build started 12/1/2016 1:15:47 PM.
+     1>Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_main.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (gtest.vcxproj, gtest_prod_test.vcxproj, gtest_unittest.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I.. /I..\include /Zi /nologo /W3 /WX- /O2 /D WIN32 /D NDEBUG /D _LIB /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\gtest_main.pdb" /Gd /TP /errorReport:prompt ..\src\gtest_main.cc
+         gtest_main.cc
+     1>Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_main.vcxproj" (1) is building "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest.vcxproj" (2:3) on node 2 (GetResolvedLinkLibs target(s)).
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (gtest_main.vcxproj, gtest_prod_test.vcxproj, gtest_unittest.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     2>Done Building Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest.vcxproj" (GetResolvedLinkLibs target(s)).
+     1>Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\Lib.exe /OUT:"N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\x64\Release\gtest_main.lib" /NOLOGO /MACHINE:X64 x64\Release\gtest_main.obj
+         gtest_main.vcxproj -> N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\x64\Release\gtest_main.lib
+     1>Done Building Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_main.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.90

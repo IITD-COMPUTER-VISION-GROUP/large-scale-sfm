@@ -1,0 +1,12 @@
+﻿Build started 21-02-2017 16:48:59.
+     1>Project "E:\brojeshwar\codes\codes\AutoCalibration.007_apurbaaGoingTOLM_outlier_change_conn_comp_ceres - tr_tcs_VSFM_dataScriptVersion_radial_LM_Merge_new\pba\msvc\pba\pba.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Performing Custom Build Tools
+         '"\nvcc.exe"' is not recognized as an internal or external command,
+         operable program or batch file.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(171,5): error MSB6006: "cmd.exe" exited with code 9009.
+     1>Done Building Project "E:\brojeshwar\codes\codes\AutoCalibration.007_apurbaaGoingTOLM_outlier_change_conn_comp_ceres - tr_tcs_VSFM_dataScriptVersion_radial_LM_Merge_new\pba\msvc\pba\pba.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.05

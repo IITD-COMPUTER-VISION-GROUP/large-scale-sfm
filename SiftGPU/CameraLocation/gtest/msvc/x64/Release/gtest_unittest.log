@@ -1,0 +1,22 @@
+﻿Build started 12/1/2016 1:10:57 PM.
+     1>Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_unittest.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (gtest.vcxproj, gtest_main.vcxproj, gtest_prod_test.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I.. /I..\include /Zi /nologo /W3 /WX- /O2 /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt ..\test\gtest_unittest.cc
+         gtest_unittest.cc
+     1>Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_unittest.vcxproj" (1) is building "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_main.vcxproj" (2:3) on node 2 (GetResolvedLinkLibs target(s)).
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (gtest.vcxproj, gtest_prod_test.vcxproj, gtest_unittest.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+   2:3>Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_main.vcxproj" (2:3) is building "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest.vcxproj" (3:3) on node 2 (GetResolvedLinkLibs target(s)).
+     3>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (gtest_main.vcxproj, gtest_prod_test.vcxproj, gtest_unittest.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     3>Done Building Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest.vcxproj" (GetResolvedLinkLibs target(s)).
+     2>Done Building Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_main.vcxproj" (GetResolvedLinkLibs target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\x64\Release\gtest_unittest.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\x64\Release\gtest_unittest.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\x64\Release\gtest_unittest.lib" /MACHINE:X64 x64\Release\gtest_unittest.obj
+         "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\x64\Release\gtest.lib"
+         "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\x64\Release\gtest_main.lib"
+         gtest_unittest.vcxproj -> N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\x64\Release\gtest_unittest.exe
+     1>Done Building Project "N:\BROJO\newTheia\TheiaSfM-master\TheiaSfM-master\libraries\gtest\msvc\gtest_unittest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.71
