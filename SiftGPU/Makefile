@@ -24,9 +24,9 @@ all:
 	cd ../Optimizer/Thirdparty/g2o/build && cmake ..
 	cd ../Optimizer/Thirdparty/g2o/build && $(MAKE)
 
-	g++ ../Optimizer/main_all.cpp ../Optimizer/utils.cpp ../Optimizer/FeaturePoints.cpp ../Optimizer/vector.cpp -std=c++11 -fopenmp -I../Optimizer/sba-1.5/ -I../Optimizer/pba/src/pba/  -I${EIGEN_INCLUDE_PATH}  -L${BA_LIBS_PATH}/lib -L./lib/ -L/usr/local/lib -L${CUDA_ART} -L../Optimizer/Thirdparty/g2o/lib/ -L../Optimizer/lib -lm -lpthread -lceres -lglog -lmatrix -limage -lpba -lblas -lcblas -lminpack -llapack -lcudart -lcamd -lccolamd -lcholmod -lcolamd -lcxsparse -lklu -lldl -lsuitesparseconfig -lg2o -o optimizer_all
+	# g++ ../Optimizer/main_all.cpp ../Optimizer/utils.cpp ../Optimizer/FeaturePoints.cpp ../Optimizer/vector.cpp -std=c++11 -fopenmp -I../Optimizer/sba-1.5/ -I../Optimizer/pba/src/pba/  -I${EIGEN_INCLUDE_PATH}  -L${BA_LIBS_PATH}/lib -L./lib/ -L/usr/local/lib -L${CUDA_ART} -L../Optimizer/Thirdparty/g2o/lib/ -L../Optimizer/lib -lm -lpthread -lceres -lglog -lmatrix -limage -lpba -lblas -lcblas -lminpack -llapack -lcudart -lcamd -lccolamd -lcholmod -lcolamd -lcxsparse -lklu -lldl -lsuitesparseconfig -lg2o -o optimizer_all
 	
-	cp optimizer_all ../bin
+	# cp optimizer_all ../bin
 
 	cd ../VocabTree2/VocabLearn/ && $(MAKE)
 
