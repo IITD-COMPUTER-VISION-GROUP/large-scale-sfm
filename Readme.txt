@@ -32,3 +32,8 @@ Execution:
 
 Run the matlab command "run.m" from matlab_codes
 
+
+please cite the following papers which are related to this work:
+
+1. Divide and conquer: A hierarchical approach to large-scale structure-from-motion; Brojeshwar Bhowmick, Suvam Patra, Avishek Chatterjee, Venu Madhav Govindu, Subhashis Banerjee; Computer Vision and Image Understanding (CVIU 2017)
+2. Divide and Conquer: Efficient large-scale structure from motion using graph partitioning; Brojeshwar Bhowmick, Suvam Patra, Avishek Chatterjee, Venu Madhav Govindu, Subhashis Banerjee; Asian Conference on Computer Vision (ACCV 2014)
